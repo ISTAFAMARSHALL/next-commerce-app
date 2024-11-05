@@ -49,8 +49,8 @@ export default function SideBar () {
 
                 <br></br>
 
-                <a className="button" href="">
-                    <>Cell Phones & Accessories</>
+                <a className="button" href="/products/cell-phones">
+                    <>Cell Phones</>
                 </a>
 
                 <br></br>

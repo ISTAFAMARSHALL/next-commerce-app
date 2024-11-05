@@ -1,18 +1,42 @@
-import ProductList from '@/app/components/product-list'
-import { phones } from '@/app/lib/phones'
+import { topCatergories } from '@/app/lib/top-catergories';
 
-export default function Home() {
+console.log (topCatergories);
 
-  const display = phones.map((item , index) => <ProductList key={index} item={item} />) 
-  
+export default function Home() { 
   return (
+
     <main>
 
-      <div className='items grid-auto-fit' >
+      <div>
 
-        {display}
+        Today's tpo categories
 
       </div>
+
+      <div>
+
+        Most Viewd Items
+
+      </div>
+
+      <div>
+
+        images og promos go here 
+        
+      </div>
+
+      <div>
+
+        Featured items
+
+      </div>
+
+      <div>
+        
+        deal of the day clearence and rocket promos
+
+      </div>
+
 
     </main>
   );
