@@ -1,6 +1,4 @@
-import { topCatergories } from '@/app/lib/top-catergories';
-
-console.log (topCatergories);
+import TopCatergories from '@/app/components/top-catergories'
 
 export default function Home() { 
   return (
@@ -9,7 +7,7 @@ export default function Home() {
 
       <div>
 
-        Today's tpo categories
+        <TopCatergories></TopCatergories>
 
       </div>
 

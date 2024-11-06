@@ -20,7 +20,7 @@ export default function SideBarToggle ({children, prop }) {
             setSidebarVisible(false)
         }
 
-    },[isSidebarVisible])
+    },[isSidebarVisible, prop])
 
     const toggleSideBar = () => {
         setSidebarVisible(!isSidebarVisible);
