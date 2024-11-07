@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-import phoneIcon from '../lib/images/top-catergories/cellphone_icon_resized.png'
-import gamingIcon from '../lib/images/top-catergories/gaming_console_icon_resized.png'
-import laptopIcon from '../lib/images/top-catergories/laptop_icon_resized.png'
-import tvIcon from '../lib/images/top-catergories/tv_icon_resized.png'
+import phoneIcon from '../lib/images/top-catergories/cellphone_icon_translucent.png'
+import gamingIcon from '../lib/images/top-catergories/gaming_console_icon_translucent.png'
+import laptopIcon from '../lib/images/top-catergories/laptop_icon_translucent.png'
+import tvIcon from '../lib/images/top-catergories/tv_icon_translucent.png'
 
 const images = [
     { image: phoneIcon, alt: 'cellphone_icon', catergory: 'Cell Phones' },
@@ -20,8 +20,14 @@ const displayImages = images.map((image , index) => {
             
         style={{
             
-            display: 'grid'
-             
+            margin: '5px',
+            fontSize: '1rem',
+            
+            // font-size: 1rem;
+            // border: 2.5px solid currentColor;
+            // border-radius: 1rem; outline: 1px dotted currentColor;
+            // outline-offset: -10px;
+
         }}>
             <Image src={image.image} alt={image.alt} width='125px' height='100px' ></Image>
             <br></br>
@@ -35,15 +41,26 @@ export default function TopCatergories () {
 
     return(
 
-        <div style={{
+        <div className='top-cat'
+        style={{
+            maxWidth: '40%',
+            display: 'flex',
+            flexWrap: 'wrap',
+            textAlign: 'center',
+            border: '2.5px solid currentColor',
+            borderRadius: '1rem',
+            right: '300px'
+            
 
         }}>
 
-            <h2>Today&apos;s Top Catergories</h2>
+            <h2 style={{ margin: '5px'}} >Today&apos;s Top Catergories</h2>
 
             <ul style={{
+
                 display: 'flex',
-                justifyContent: 'space-evenly'
+                margin: '5px'
+                
             }}>
 
                 {displayImages}
