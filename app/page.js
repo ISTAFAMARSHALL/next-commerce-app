@@ -23,19 +23,13 @@ export default function Home() {
 
       <div>
 
-        <Promos/>
-        
-      </div>
-
-      <div>
-
         Featured items
 
       </div>
 
       <div>
         
-        deal of the day clearence and rocket promos
+        <Promos/>
 
       </div>
 

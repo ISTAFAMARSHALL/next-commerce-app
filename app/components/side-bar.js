@@ -89,11 +89,11 @@ export default function SideBar () {
                     <>Wearable Technology</>
                 </a>
 
-                <br></br>
+                {/* <br></br>
 
                 <a className="button" href="">
                     <>Small Appliances, Floor Care & Home Air Quality</>
-                </a>
+                </a> */}
 
                 <br></br>
 
@@ -107,17 +107,17 @@ export default function SideBar () {
                     <>Printers & Computer Accessories</>
                 </a>
 
-                <br></br>
+                {/* <br></br>
 
                 <a className="button" href="">
                     <>Electric Transportation</>
-                </a>
+                </a> */}
 
-                <br></br>
+                {/* <br></br>
 
                 <a className="button" href="">
                     <>Collectibles & Toys</>
-                </a>
+                </a> */}
             </div>
 
             <SideBarToggle prop={"Close"} >Close</SideBarToggle>
