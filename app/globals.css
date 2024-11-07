@@ -124,13 +124,5 @@ a {
   font-size: 1rem;
   border: 2.5px solid currentColor;
   border-radius: 1rem; outline: 1px dotted currentColor;
-  outline-offset: -10px;
-}
-
-/* .top-cat {
-
-            border: 2.5px solid currentColor;
-            border-color: #ffffff;
-            border-radius: 2rem; outline: 1px dotted currentColor;
-            outline-offset: -10px;
-} */
+  outline-offset: -10px
+};

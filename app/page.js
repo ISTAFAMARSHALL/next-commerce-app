@@ -1,11 +1,15 @@
 import TopCatergories from '@/app/components/top-catergories'
+import MainPromo from '@/app/components/main-promo'
+import Promos from '@/app/components/promos'
 
 export default function Home() { 
   return (
 
-    <main>
+    <div>
 
-      <div>
+      <div style={{ display: 'flex' , padding: '2rem' }}>
+
+        <MainPromo/>
 
         <TopCatergories></TopCatergories>
 
@@ -13,13 +17,13 @@ export default function Home() {
 
       <div>
 
-        Most Viewd Items
+        Most viewed items 
 
       </div>
 
       <div>
 
-        images og promos go here 
+        <Promos/>
         
       </div>
 
@@ -36,6 +40,6 @@ export default function Home() {
       </div>
 
 
-    </main>
+    </div>
   );
 }

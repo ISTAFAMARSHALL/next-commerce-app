@@ -15,24 +15,19 @@ const images = [
 const displayImages = images.map((image , index) => {
     return (
         
-        <li 
+        <div
         key={index}
             
         style={{
-            
+            justifySelf: 'space-around',
             margin: '5px',
             fontSize: '1rem',
-            
-            // font-size: 1rem;
-            // border: 2.5px solid currentColor;
-            // border-radius: 1rem; outline: 1px dotted currentColor;
-            // outline-offset: -10px;
-
+            padding: '1rem',
         }}>
             <Image src={image.image} alt={image.alt} width='125px' height='100px' ></Image>
             <br></br>
             {image.catergory}
-        </li>
+        </div>
     
     )
 })
@@ -43,29 +38,28 @@ export default function TopCatergories () {
 
         <div className='top-cat'
         style={{
-            maxWidth: '40%',
-            display: 'flex',
-            flexWrap: 'wrap',
+            maxHeight: '250px',
             textAlign: 'center',
             border: '2.5px solid currentColor',
             borderRadius: '1rem',
-            right: '300px'
+            padding: '1rem',
             
 
         }}>
 
             <h2 style={{ margin: '5px'}} >Today&apos;s Top Catergories</h2>
 
-            <ul style={{
+            <div style={{
 
                 display: 'flex',
-                margin: '5px'
+                margin: '5px',
+                padding: '1rem',
                 
             }}>
 
                 {displayImages}
 
-            </ul>
+            </div>
         
         </div>
 
