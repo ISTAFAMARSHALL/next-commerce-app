@@ -1,5 +1,4 @@
 import ProductList from '@/app/components/product-list'
-import { phones } from '@/app/lib/phones'
 import { all_products } from '@/app/lib/all-products'
 
 export default function Page (props) {

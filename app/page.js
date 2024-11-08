@@ -1,6 +1,7 @@
 import TopCatergories from '@/app/components/top-catergories'
 import MainPromo from '@/app/components/main-promo'
 import Promos from '@/app/components/promos'
+import FeaturedItems from '@/app/components/featured-items'
 
 export default function Home() { 
   return (
@@ -23,7 +24,7 @@ export default function Home() {
 
       <div>
 
-        Featured items
+        <FeaturedItems/>
 
       </div>
 
