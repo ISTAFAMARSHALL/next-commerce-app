@@ -1,9 +1,12 @@
 import ProductList from '@/app/components/product-list'
 import { phones } from '@/app/lib/phones'
+import { all_products } from '@/app/lib/all-products'
 
-const display = phones.map((item , index) => <ProductList key={index} item={item} />) 
+export default function Page (props) {
 
-export default function Page () {
+    const selectedProduct = all_products.filter((product) => product.category === props.params.slug)
+
+    const display = selectedProduct.map((item , index) => <ProductList key={index} item={item} />) 
 
     return (
         <main>

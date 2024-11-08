@@ -13,7 +13,7 @@ export default function ProductList ({item}) {
             >
 
                 <Link href={''} >
-                    <Image src={item.image} alt={item.name} width={150} height={150} />
+                    <Image src={item.thumbnails[0]} alt={item.name} width={120} height={120} />
                 </Link>
 
                 <br></br>

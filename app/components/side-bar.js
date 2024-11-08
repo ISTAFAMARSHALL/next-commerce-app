@@ -18,25 +18,37 @@ export default function SideBar () {
             >
                 {/* Link elements for Best Buy categories */}
                 
-                <a className="button" href="">
+                <a className="button" href="/products/laptop-computers">
                     <>Laptops & Computers</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
-                    <>TVs & Projectors</>
+                <a className="button" href="/products/televisions">
+                    <>TeleVisions</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
-                    <>Video Games, VR & Collectibles</>
+                <a className="button" href="/products/projectors">
+                    <>Projectors</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
+                <a className="button" href="/products/gaming-consoles">
+                    <>Video Game Consoles</>
+                </a>
+
+                <br></br>
+
+                <a className="button" href="/products/vr-headsets">
+                    <>Virtual Reality</>
+                </a>
+
+                <br></br>
+
+                <a className="button" href="/products/appliances">
                     <>Major Appliances</>
                 </a>
 
@@ -55,37 +67,43 @@ export default function SideBar () {
 
                 <br></br>
 
-                <a className="button" href="">
+                <a className="button" href="/products/headphones">
                     <>Headphones</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
+                <a className="button" href="/products/pc-gaming">
                     <>PC Gaming</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
+                <a className="button" href="/products/tablets-e-readers">
                     <>Tablets & E-Readers</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
-                    <>Sound Bars, Bluetooth Speakers & Home Audio</>
+                <a className="button" href="/products/home-audio">
+                    <>Home Audio</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
-                    <>Cameras, Camcorders & Drones</>
+                <a className="button" href="/products/cameras-camcorders">
+                    <>Cameras, Camcorders</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
+                <a className="button" href="/products/drones">
+                    <>Drones</>
+                </a>
+
+                <br></br>
+
+                <a className="button" href="/products/wearable-tech">
                     <>Wearable Technology</>
                 </a>
 
@@ -97,13 +115,13 @@ export default function SideBar () {
 
                 <br></br>
 
-                <a className="button" href="">
+                <a className="button" href="/products/smarthome-security-wifi">
                     <>Smart Home, Security & Wi-Fi</>
                 </a>
 
                 <br></br>
 
-                <a className="button" href="">
+                <a className="button" href="/products/printers-computeraccessories">
                     <>Printers & Computer Accessories</>
                 </a>
 
