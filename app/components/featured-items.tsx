@@ -115,14 +115,20 @@
 //   );
 // }
 
-
 import React from 'react';
 import { all_products } from '../lib/all-products';
 import ProductList from '@/app/components/product-list';
 
+// Define the product structure
+interface ProductItem {
+  thumbnails: string[];
+  name: string;
+  description: string;
+}
+
 export default function FeaturedItems() {
   // Function to get random products from the all_products array
-  const getRandomProducts = (products: any[], count: number) => {
+  const getRandomProducts = (products: ProductItem[], count: number): ProductItem[] => {
     const shuffled = [...products].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   };
@@ -147,5 +153,4 @@ export default function FeaturedItems() {
       </div>
     </main>
   );
-}
-
+};
