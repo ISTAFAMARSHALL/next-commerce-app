@@ -134,7 +134,7 @@ export default function TopCategories() {
             borderRadius: '1rem',
             padding: '1rem',
         }}>
-            <h2 style={{ margin: '5px' }}>Today's Top Categories</h2>
+            <h2 style={{ margin: '5px' }}>Today&apos Top Categories</h2>
             <div style={{
                 display: 'flex',
                 justifyContent: 'space-between',
