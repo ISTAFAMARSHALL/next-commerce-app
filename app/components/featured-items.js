@@ -203,55 +203,205 @@
 //   );
 // };
 
+// import React from 'react';
+
+// interface FeaturedProductItem {
+//   name: string;
+//   price: string;
+//   link: string;
+//   primaryImage: string;
+//   thumbnails: string[];
+//   category: string;
+//   manufacturer: string;
+//   views: number;
+//   onSale: boolean;
+//   onClearance: boolean;
+//   description: string[];
+// }
+
+// interface ProductListProps {
+//   item: FeaturedProductItem;
+// }
+
+// export default function ProductList({ item }: ProductListProps) {
+//   return (
+//     <div style={{
+//       display: 'flex',
+//       flexDirection: 'column',
+//       alignItems: 'center',
+//       textAlign: 'center',
+//       padding: '1em',
+//       border: '1px solid #ddd',
+//       borderRadius: '8px',
+//       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+//       margin: '1em',
+//       maxWidth: '200px',
+//     }}>
+//       <h3 style={{
+//         fontSize: '1em',
+//         margin: '0.5em 0',
+//         color: '#333'
+//       }}>{item.name}</h3>
+
+//       <div style={{
+//         minWidth: '150px',
+//         minHeight: '80px',
+//         margin: '0.5em 0',
+//         color: '#555',
+//         fontSize: '0.9em',
+//       }}>
+//         <p>{item.description.join(' ')}</p> {/* Joining array if necessary */}
+//       </div>
+//     </div>
+//   );
+// };
+
+// import React from 'react';
+
+// interface FeaturedProductItem {
+//   name: string;
+//   price: string;
+//   link: string;
+//   primaryImage: string;
+//   thumbnails: string[];
+//   category: string;
+//   manufacturer: string;
+//   views: number;
+//   onSale: boolean;
+//   onClearance: boolean;
+//   description: string[]; // Expecting description to be an array of strings
+// }
+
+// interface ProductListProps {
+//   item: FeaturedProductItem;
+// }
+
+// export default function ProductList({ item }: ProductListProps) {
+
+//   console.log(item)
+  
+//   return (
+//     <div style={{
+//       display: 'flex',
+//       flexDirection: 'column',
+//       alignItems: 'center',
+//       textAlign: 'center',
+//       padding: '1em',
+//       border: '1px solid #ddd',
+//       borderRadius: '8px',
+//       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+//       margin: '1em',
+//       maxWidth: '200px',
+//     }}>
+//       <h3 style={{
+//         fontSize: '1em',
+//         margin: '0.5em 0',
+//         color: '#333'
+//       }}>{item?.name || 'Unnamed Product'}</h3>
+
+//       <div style={{
+//         minWidth: '150px',
+//         minHeight: '80px',
+//         margin: '0.5em 0',
+//         color: '#555',
+//         fontSize: '0.9em',
+//       }}>
+//         {/* Joining array if description is present, else displaying default message */}
+//         <p>{item?.description?.length ? item.description.join(' ') : 'No description available'}</p>
+//       </div>
+
+//       {/* Additional optional rendering for other fields if needed */}
+//       <p style={{ fontSize: '0.85em', color: '#777' }}>
+//         {item?.price ? `$${item.price}` : 'Price not available'}
+//       </p>
+//     </div>
+//   );
+// }
+
+// import React from 'react';
+// import { all_products } from '../lib/all-products'; // Import your products data
+// import ProductList from '@/app/components/product-list';
+
+// interface FeaturedProductItem {
+//   name: string;
+//   price: string;
+//   link: string;
+//   primaryImage: string;
+//   thumbnails: string[];
+//   category: string;
+//   manufacturer: string;
+//   views: number;
+//   onSale: boolean;
+//   onClearance: boolean;
+//   description: string[];
+// }
+
+// export default function FeaturedItems() {
+//   // Function to get a specified number of random products from all_products
+//   const getRandomProducts = (products: FeaturedProductItem[], count: number): FeaturedProductItem[] => {
+//     if (!products || products.length === 0) {
+//       return []; // Return an empty array if products is undefined or empty
+//     }
+//     const shuffled = [...products].sort(() => 0.5 - Math.random());
+//     return shuffled.slice(0, count);
+//   };
+
+//   // Select 12 random products
+//   const selectedProducts = getRandomProducts(all_products, 12);
+
+//   return (
+//     <main style={{ padding: '2em', textAlign: 'center' }}>
+//       <h1 style={{ textAlign: 'center', fontSize: '2em', marginBottom: '1em' }}>Featured Items</h1>
+      
+//       {/* Responsive grid container for items */}
+//       <div style={{
+//         display: 'grid',
+//         gap: '1em',
+//         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+//         justifyItems: 'center',
+//       }}>
+//         {selectedProducts.map((item, index) => (
+//           <div>
+//           <ProductList key={index} item={item} /> // Pass each item to ProductList
+//           </div>
+//         ))}
+//       </div>
+//     </main>
+//   );
+// }
+
 import React from 'react';
+import { all_products } from '../lib/all-products'; // Import your products data
+import ProductList from '@/app/components/product-list';
 
-interface FeaturedProductItem {
-  name: string;
-  price: string;
-  link: string;
-  primaryImage: string;
-  thumbnails: string[];
-  category: string;
-  manufacturer: string;
-  views: number;
-  onSale: boolean;
-  onClearance: boolean;
-  description: string[];
-}
+export default function FeaturedItems() {
+  // Function to get a specified number of random products from all_products
+  const getRandomProducts = (products, count) => {
+    if (!products || products.length === 0) {
+      return []; // Return an empty array if products is undefined or empty
+    }
+    const shuffled = [...products].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  };
 
-interface ProductListProps {
-  item: FeaturedProductItem;
-}
+  // Select 12 random products
+  const selectedProducts = getRandomProducts(all_products, 12);
 
-export default function ProductList({ item }: ProductListProps) {
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      textAlign: 'center',
-      padding: '1em',
-      border: '1px solid #ddd',
-      borderRadius: '8px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-      margin: '1em',
-      maxWidth: '200px',
-    }}>
-      <h3 style={{
-        fontSize: '1em',
-        margin: '0.5em 0',
-        color: '#333'
-      }}>{item.name}</h3>
-
+    <main style={{ padding: '2em', textAlign: 'center' }}>
+      <h1 style={{ textAlign: 'center', fontSize: '2em', marginBottom: '1em' }}>Featured Items</h1>
+      
+      {/* Responsive grid container for items */}
       <div style={{
-        minWidth: '150px',
-        minHeight: '80px',
-        margin: '0.5em 0',
-        color: '#555',
-        fontSize: '0.9em',
+        display: 'grid',
+        gap: '1em',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+        justifyItems: 'center',
       }}>
-        <p>{item.description.join(' ')}</p> {/* Joining array if necessary */}
+        {selectedProducts.map((item, index) => (
+          <ProductList key={index} item={item} /> // Pass each item to ProductList
+        ))}
       </div>
-    </div>
+    </main>
   );
-};
+}
