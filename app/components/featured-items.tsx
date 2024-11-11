@@ -155,12 +155,57 @@
 //   );
 // };
 
-import React from 'react';
-import { all_products } from '../lib/all-products';
-import ProductList from '@/app/components/product-list';
+// import React from 'react';
+// import { all_products } from '../lib/all-products';
+// import ProductList from '@/app/components/product-list';
 
-// Define the product structure based on all_products
-interface ProductItem {
+// // Define the product structure based on all_products
+// interface ProductItem {
+//   name: string;
+//   price: string;
+//   link: string;
+//   primaryImage: string;
+//   thumbnails: string[];
+//   category: string;
+//   manufacturer: string;
+//   views: number;
+//   onSale: boolean;
+//   onClearance: boolean;
+//   description: string[]; // Adjusted to match the array type
+// }
+
+// export default function FeaturedItems() {
+//   // Function to get random products from the all_products array
+//   const getRandomProducts = (products: ProductItem[], count: number): ProductItem[] => {
+//     const shuffled = [...products].sort(() => 0.5 - Math.random());
+//     return shuffled.slice(0, count);
+//   };
+
+//   // Select random products
+//   const selectedProducts = getRandomProducts(all_products, 12);
+
+//   return (
+//     <main style={{ padding: '2em', textAlign: 'center' }}>
+//       <h1 style={{ textAlign: 'center', fontSize: '2em', marginBottom: '1em' }}>Featured Items</h1>
+      
+//       {/* Responsive grid container for items */}
+//       <div style={{
+//         display: 'grid',
+//         gap: '1em',
+//         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+//         justifyItems: 'center',
+//       }}>
+//         {selectedProducts.map((item, index) => (
+//           <ProductList key={index} item={item} />
+//         ))}
+//       </div>
+//     </main>
+//   );
+// };
+
+import React from 'react';
+
+interface FeaturedProductItem {
   name: string;
   price: string;
   link: string;
@@ -171,34 +216,42 @@ interface ProductItem {
   views: number;
   onSale: boolean;
   onClearance: boolean;
-  description: string[]; // Adjusted to match the array type
+  description: string[];
 }
 
-export default function FeaturedItems() {
-  // Function to get random products from the all_products array
-  const getRandomProducts = (products: ProductItem[], count: number): ProductItem[] => {
-    const shuffled = [...products].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
-  };
+interface ProductListProps {
+  item: FeaturedProductItem;
+}
 
-  // Select random products
-  const selectedProducts = getRandomProducts(all_products, 12);
-
+export default function ProductList({ item }: ProductListProps) {
   return (
-    <main style={{ padding: '2em', textAlign: 'center' }}>
-      <h1 style={{ textAlign: 'center', fontSize: '2em', marginBottom: '1em' }}>Featured Items</h1>
-      
-      {/* Responsive grid container for items */}
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      textAlign: 'center',
+      padding: '1em',
+      border: '1px solid #ddd',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      margin: '1em',
+      maxWidth: '200px',
+    }}>
+      <h3 style={{
+        fontSize: '1em',
+        margin: '0.5em 0',
+        color: '#333'
+      }}>{item.name}</h3>
+
       <div style={{
-        display: 'grid',
-        gap: '1em',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-        justifyItems: 'center',
+        minWidth: '150px',
+        minHeight: '80px',
+        margin: '0.5em 0',
+        color: '#555',
+        fontSize: '0.9em',
       }}>
-        {selectedProducts.map((item, index) => (
-          <ProductList key={index} item={item} />
-        ))}
+        <p>{item.description.join(' ')}</p> {/* Joining array if necessary */}
       </div>
-    </main>
+    </div>
   );
 };
