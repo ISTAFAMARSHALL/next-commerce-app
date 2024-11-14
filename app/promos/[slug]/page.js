@@ -8,7 +8,7 @@ const headlines = [
     { title: 'Smart Buy Holiday Deals!' , slug:'sale' },
     { title: 'Rocket-Fish' , slug: 'rocket-fish' },
     { title: 'Chromebook' , slug: 'chromebook' },
-    { title: 'Sony-Mini-LED' , slug: 'sony-mini-lED' },
+    { title: 'Sony Mini LED Televisions' , slug: 'sony-mini-lED' },
 ]
 
 export default function Promos (props) {
