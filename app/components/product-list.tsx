@@ -52,6 +52,7 @@ interface ProductItem {
   thumbnails: string[];
   name: string;
   description: string;
+  price: string;
 }
 
 interface ProductListProps {
@@ -82,6 +83,14 @@ export default function ProductList({ item }: ProductListProps) {
           color: '#333'
         }}>{item.name}</h3>
       </a>
+
+      <p style={{
+          fontSize: '1.75em',
+          color: '#007bff',
+          fontWeight: 'bold'
+      }}>
+        {item.price ? `${item.price}` : 'Price not available'}
+      </p>
 
       <div style={{
         minWidth: '150px',

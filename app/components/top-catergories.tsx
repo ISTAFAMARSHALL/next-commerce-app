@@ -119,10 +119,10 @@ import laptopIcon from '../lib/images/top-catergories/laptop_icon_translucent.pn
 import tvIcon from '../lib/images/top-catergories/tv_icon_translucent.png';
 
 const images = [
-    { image: phoneIcon, alt: 'cellphone_icon', category: 'Cell Phones' },
-    { image: gamingIcon, alt: 'gaming_console_icon', category: 'Gaming Consoles' },
-    { image: laptopIcon, alt: 'laptop_icon', category: 'Laptops' },
-    { image: tvIcon, alt: 'tv_icon', category: 'TVs' }
+    { image: phoneIcon, alt: 'cellphone_icon', category: 'Cell Phones' , link: 'cell-phones' },
+    { image: gamingIcon, alt: 'gaming_console_icon', category: 'Gaming Consoles' , link:'gaming-consoles' },
+    { image: laptopIcon, alt: 'laptop_icon', category: 'Laptops' , link: 'laptop-computers' },
+    { image: tvIcon, alt: 'tv_icon', category: 'TVs' , link: 'televisions' }
 ];
 
 export default function TopCategories() {
@@ -153,12 +153,14 @@ export default function TopCategories() {
                             transition: 'transform 0.2s, box-shadow 0.2s',
                             cursor: 'pointer',
                         }} className="hoverEffect">
-                            <Image
-                                src={image.image}
-                                alt={image.alt}
-                                width={80}
-                                height={80}
-                            />
+                            <a href={`/products/${image.link}`}>
+                                <Image
+                                    src={image.image}
+                                    alt={image.alt}
+                                    width={80}
+                                    height={80}
+                                />
+                            </a>
                         </div>
                         <p style={{ fontSize: '1rem', marginTop: '0.5em' }}>{image.category}</p>
                     </div>

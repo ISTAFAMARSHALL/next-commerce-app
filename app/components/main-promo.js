@@ -51,7 +51,7 @@ import img3 from '../lib/images/main-promo-imgs/Macbook-pro-PROMO.webp';
 import img4 from '../lib/images/main-promo-imgs/Open Box Clearnace.webp';
 
 const images = [
-    { image: img1, alt: 'Holidays - BOGO' , link: 'bogo' },
+    { image: img1, alt: 'Holidays - BOGO' , link: 'sale' },
     { image: img2, alt: 'Deal of the Day' , link: 'deal-of-the-day' },
     { image: img3, alt: 'Macbook Pro Promo' , link: 'macbook-promo' },
     { image: img4, alt: 'Open Box Clearance' , link: 'clearance' }
@@ -76,13 +76,15 @@ export default function MainPromo() {
             width: '100%',
             maxWidth: '600px',
         }}>
-            <Image
-                src={images[currentImageIndex].image}
-                alt={images[currentImageIndex].alt}
-                width={600}
-                height={600}
-                style={{ borderRadius: '8px' }}
-            />
+            <a href={`/promos/${images[currentImageIndex].link}`} >
+                <Image
+                    src={images[currentImageIndex].image}
+                    alt={images[currentImageIndex].alt}
+                    width={600}
+                    height={600}
+                    style={{ borderRadius: '8px' }}
+                />
+            </a>
         </div>
     );
 }

@@ -83,13 +83,13 @@ export default function TopViewedProducts() {
               }}>{item.name}</h3>
             </a>
             
-            <p style={{
+            {/* <p style={{
               fontSize: '0.85em',
               color: '#777',
               textAlign: 'center'
             }}>
               {item.price ? `${item.price}` : 'Price not available'}
-            </p>
+            </p> */}
           </div>
         ))}
       </div>
