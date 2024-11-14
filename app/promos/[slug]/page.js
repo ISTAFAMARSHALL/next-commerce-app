@@ -6,6 +6,9 @@ const headlines = [
     { title: 'MacBook Pro' , slug:'macbook-promo' }, 
     { title: 'Check out our Clearnace Sale!' , slug:'clearance' },
     { title: 'Smart Buy Holiday Deals!' , slug:'sale' },
+    { title: 'Rocket-Fish' , slug: 'rocket-fish' },
+    { title: 'Chromebook' , slug: 'chromebook' },
+    { title: 'Sony-Mini-LED' , slug: 'sony-mini-lED' },
 ]
 
 export default function Promos (props) {
@@ -43,6 +46,24 @@ export default function Promos (props) {
     if (props.params.slug === 'sale') {
 
         selectedProducts = all_products.filter((product) => product.onSale === true )
+        
+    }
+
+    if (props.params.slug === 'rocket-fish') {
+
+        selectedProducts = all_products.filter((product) => product.name.includes('Rocket'))
+        
+    }
+
+    if (props.params.slug === 'chromebook') {
+
+        selectedProducts = all_products.filter((product) => product.name.includes('Chromebook'))
+        
+    }
+
+    if (props.params.slug === 'sony-mini-lED') {
+
+        selectedProducts = all_products.filter((product) => product.name.includes('Sony'))
         
     }
 

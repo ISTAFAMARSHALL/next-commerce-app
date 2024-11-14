@@ -3060,6 +3060,122 @@ export const all_products = [
             "Customizable DPI settings up to 16,000 DPI",
             "Ergonomic and durable construction"
         ]
-    }
+    },
+    {
+      "id": 201,
+      "name": "Rocketfish™ - 2-Output HDMI Splitter with 4K at 60Hz and HDR Pass-Through - Black",
+      "price": "$69.99",
+      "link": "https://www.bestbuy.com/site/rocketfish-2-output-hdmi-splitter/5986903.p?skuId=5986903",
+      "primaryImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5986/5986903_sd.jpg",
+      "thumbnails": [
+          "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5986/5986903_sd.jpg",
+          "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5986/5986903cv11d.jpg",
+          "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5986/5986903cv12d.jpg"
+      ],
+      "category": "tv-home-theater-accessories",
+      "manufacturer": "Rocketfish",
+      "views": 0,
+      "onSale": false,
+      "onClearance": false,
+      "description": [
+          "Splits one HDMI input into two outputs",
+          "Supports 4K at 60Hz and HDR pass-through",
+          "Maintains high-quality audio and video signals",
+          "Ideal for connecting multiple displays"
+      ]
+  },
+  {
+    "id": 202,
+    "name": "Rocketfish™ - Wireless Rear Speaker Kit - Black",
+    "price": "$99.99",
+    "link": "https://www.bestbuy.com/site/rocketfish-wireless-rear-speaker-kit/6254096.p?skuId=6254096",
+    "primaryImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6254/6254096_sd.jpg",
+    "thumbnails": [
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6254/6254096_sd.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6254/6254096cv11d.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6254/6254096cv12d.jpg"
+    ],
+    "category": "tv-home-theater-accessories",
+    "manufacturer": "Rocketfish",
+    "views": 0,
+    "onSale": false,
+    "onClearance": false,
+    "description": [
+        "Converts wired speakers into wireless",
+        "Transmits high-quality audio signals",
+        "Easy setup with plug-and-play functionality",
+        "Compatible with most AV receivers"
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Rocketfish™ - 4' 8K Ultra High Speed HDMI® 2.1 Certified Cable - Black",
+    "price": "$39.99",
+    "link": "https://www.bestbuy.com/site/rocketfish-4-8k-ultra-high-speed-hdmi-cable/6430949.p?skuId=6430949",
+    "primaryImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430949_sd.jpg",
+    "thumbnails": [
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430949_sd.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430949cv11d.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430949cv12d.jpg"
+    ],
+    "category": "tv-home-theater-accessories",
+    "manufacturer": "Rocketfish",
+    "views": 0,
+    "onSale": false,
+    "onClearance": false,
+    "description": [
+        "Supports 8K resolution at 60Hz",
+        "Certified HDMI 2.1 for high-speed data transfer",
+        "Compatible with latest gaming consoles and TVs",
+        "Durable construction with gold-plated connectors"
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Rocketfish™ - 6 Outlet/2 USB Swivel Wall Tap 2100 Joules Surge Protector - Black",
+    "price": "$34.99",
+    "link": "https://www.bestbuy.com/site/rocketfish-6-outlet-2-usb-surge-protector/4689045.p?skuId=4689045",
+    "primaryImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4689/4689045_sd.jpg",
+    "thumbnails": [
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4689/4689045_sd.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4689/4689045cv11d.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4689/4689045cv12d.jpg"
+    ],
+    "category": "tv-home-theater-accessories",
+    "manufacturer": "Rocketfish",
+    "views": 0,
+    "onSale": false,
+    "onClearance": false,
+    "description": [
+        "Protects devices from power surges up to 2100 joules",
+        "Features 6 outlets and 2 USB ports for charging",
+        "Swivel design for flexible placement",
+        "LED indicators for surge protection status"
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Rocketfish™ - 4-Port 4K 60Hz HDMI Switch Box - Black",
+    "price": "$89.99",
+    "link": "https://www.bestbuy.com/site/rocketfish-4-port-hdmi-switch-box/5055100.p?skuId=5055100",
+    "primaryImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5055/5055100_sd.jpg",
+    "thumbnails": [
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5055/5055100_sd.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5055/5055100cv11d.jpg",
+        "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5055/5055100cv12d.jpg"
+    ],
+    "category": "tv-home-theater-accessories",
+    "manufacturer": "Rocketfish",
+    "views": 0,
+    "onSale": false,
+    "onClearance": false,
+    "description": [
+        "Connects up to 4 HDMI sources to one display",
+        "Supports 4K resolution at 60Hz for high-quality video",
+        "Compatible with HDR for enhanced color and contrast",
+        "Remote control included for easy switching between devices",
+        "Ideal for home theater setups with multiple devices"
+    ]
+  }
 ]
       

@@ -6,9 +6,9 @@ import img4 from '../lib/images/promos/Sony-Mini-LED-Promo.jpeg';
 
 const images = [
 
-    { image: img1, alt: 'Rocket-Fish' },
-    { image: img3, alt: 'Chromebook' },
-    { image: img4, alt: 'Sony-Mini-LED' },
+    { image: img1, alt: 'Rocket-Fish' , link: 'rocket-fish' },
+    { image: img3, alt: 'Chromebook' , link: 'chromebook' },
+    { image: img4, alt: 'Sony-Mini-LED' , link: 'sony-mini-lED' },
 
 ]
 
@@ -16,9 +16,9 @@ const displaysimages = images.map((image , index) => {
 
     return (
 
-        <div key={index}>
+        <a key={index} href={`/promos/${image.link}`}>
             <Image src={image.image} alt={image.alt} width='100px' height='100px' />
-        </div>    
+        </a>    
     )
 })
 
