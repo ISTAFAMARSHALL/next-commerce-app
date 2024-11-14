@@ -395,7 +395,7 @@ export default function FeaturedItems() {
       <div style={{
         display: 'grid',
         gap: '1em',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
         justifyItems: 'center',
       }}>
         {selectedProducts.map((item, index) => (

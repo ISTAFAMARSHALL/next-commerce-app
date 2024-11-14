@@ -76,6 +76,7 @@ import TopCategories from '@/app/components/top-catergories';
 import MainPromo from '@/app/components/main-promo';
 import Promos from '@/app/components/promos';
 import FeaturedItems from '@/app/components/featured-items';
+import TopViewedProducts from '@/app/components/top-viewed-products'
 
 export default function Home() { 
   return (
@@ -93,9 +94,7 @@ export default function Home() {
         <TopCategories />
       </div>
 
-      <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-        Most viewed items 
-      </div>
+      <TopViewedProducts />
 
       <FeaturedItems />
 

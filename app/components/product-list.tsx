@@ -48,6 +48,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 interface ProductItem {
+  id: number;
   thumbnails: string[];
   name: string;
   description: string;
@@ -71,15 +72,16 @@ export default function ProductList({ item }: ProductListProps) {
       margin: '1em',
       maxWidth: '200px',
     }}>
-      <Link href={''}>
-        <Image src={item.thumbnails[0]} alt={item.name} width={120} height={120} style={{ borderRadius: '8px' }} />
-      </Link>
-
-      <h3 style={{
-        fontSize: '1em',
-        margin: '0.5em 0',
-        color: '#333'
-      }}>{item.name}</h3>
+      
+      <Image src={item.thumbnails[0]} alt={item.name} width={120} height={120} style={{ borderRadius: '8px' }} />
+      
+      <a href={`/product-details/${item.id}`} >
+        <h3 style={{
+          fontSize: '1em',
+          margin: '0.5em 0',
+          color: '#333'
+        }}>{item.name}</h3>
+      </a>
 
       <div style={{
         minWidth: '150px',
@@ -88,8 +90,11 @@ export default function ProductList({ item }: ProductListProps) {
         color: '#555',
         fontSize: '0.9em',
       }}>
+
         <p>{item.description}</p>
+
       </div>
+      
     </div>
   );
 }
