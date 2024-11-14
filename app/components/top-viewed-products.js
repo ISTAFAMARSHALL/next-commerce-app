@@ -1,34 +1,3 @@
-// import React from 'react';
-// import { all_products } from '../lib/all-products'; // Import your products data
-// import ProductList from '@/app/components/product-list';
-
-// export default function TopViewedProducts() {
-//   // Sort products by views in descending order and take the top 5
-//   const topViewedProducts = all_products
-//     .slice() // Make a copy of the array to avoid modifying the original
-//     .sort((a, b) => b.views - a.views)
-//     .slice(0, 5);
-
-//   return (
-//     <section style={{ padding: '2em', textAlign: 'center' }}>
-//       <h2 style={{ textAlign: 'center', fontSize: '1.8em', marginBottom: '1em' }}>Top Viewed Products</h2>
-      
-//       {/* Single row container for items */}
-//       <div style={{
-//         display: 'flex',
-//         justifyContent: 'center', // Centers the row
-//         gap: '1em', // Even spacing between items
-//         overflowX: 'auto', // Allows horizontal scrolling on small screens
-//         padding: '1em 0',
-//       }}>
-//         {topViewedProducts.map((item, index) => (
-//           <ProductList key={index} item={item} />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
 import React from 'react';
 import Image from 'next/image';
 import { all_products } from '../lib/all-products';
