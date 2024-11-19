@@ -75,9 +75,9 @@ const Header = ({ onMenuClick, onToggleDarkMode, isDarkMode }) => {
 
       <div style={styles.icons}>
         {/* <a href="" style={styles.iconLink}>Login</a> */}
-        <FiShoppingCart style={styles.icon} />
+        {/* <FiShoppingCart style={styles.icon} />
         <FiHeart style={styles.icon} />
-        <FiUser style={styles.icon} />
+        <FiUser style={styles.icon} /> */}
         <button onClick={onToggleDarkMode} style={styles.darkModeToggle}>
           {isDarkMode ? <FiSun /> : <FiMoon />}
         </button>
