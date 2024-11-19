@@ -1,4 +1,17 @@
-import React from 'react';
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true, // Enforce React strict mode for development
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'pisces.bbystatic.com', // Add other domains as needed
+      },
+    ],
+  },
+};
+
+export default nextConfig;import React from 'react';
 import Image from 'next/image';
 import { all_products } from '../lib/all-products';
 
@@ -19,7 +32,7 @@ export default function TopViewedProducts() {
         justifyContent: 'center', // Centers the row
         gap: '1em', // Even spacing between items
         overflowX: 'auto', // Allows horizontal scrolling on small screens
-        padding: '1em 0',
+        padding: '1em 0'
       }}>
         {topViewedProducts.map((item, index) => (
           <div key={index} style={{
