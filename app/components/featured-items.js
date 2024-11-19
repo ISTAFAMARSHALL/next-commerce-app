@@ -37,7 +37,6 @@
 import React from 'react';
 import ProductCard from '@/app/components/product-card'; // Reuse the ProductCard component for consistency
 import { all_products } from '../lib/all-products';
-import { BsJustify } from 'react-icons/bs';
 
 // Example data for featured items – replace with actual data
 // const featuredItems = [

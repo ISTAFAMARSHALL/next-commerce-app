@@ -52,7 +52,6 @@
 
 'use client'
 import React, { useState } from 'react';
-import Image from 'next/image';
 import ProductCard from '@/app/components/product-card';
 import { all_products } from '@/app/lib/all-products';
 
@@ -77,17 +76,17 @@ const catergories = [
 
 
 // Example product data; replace with dynamic data
-const products = [
-  { id: 1, name: 'Gaming Laptop', image: '/images/gaming-laptop.jpg', price: '$999', category: 'Laptops' },
-  { id: 2, name: '4K TV', image: '/images/4k-tv.jpg', price: '$799', category: 'Televisions' },
-  { id: 3, name: 'Wireless Headphones', image: '/images/headphones.jpg', price: '$129', category: 'Accessories' },
-  { id: 4, name: 'Smartphone', image: '/images/smartphone.jpg', price: '$699', category: 'Phones' },
-  // Add more products
-];
+// const products = [
+//   { id: 1, name: 'Gaming Laptop', image: '/images/gaming-laptop.jpg', price: '$999', category: 'Laptops' },
+//   { id: 2, name: '4K TV', image: '/images/4k-tv.jpg', price: '$799', category: 'Televisions' },
+//   { id: 3, name: 'Wireless Headphones', image: '/images/headphones.jpg', price: '$129', category: 'Accessories' },
+//   { id: 4, name: 'Smartphone', image: '/images/smartphone.jpg', price: '$699', category: 'Phones' },
+//   // Add more products
+// ];
 
 const Products = (props) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filter, setFilter] = useState('All');
+  // const [searchTerm, setSearchTerm] = useState('');
+  // const [filter, setFilter] = useState('All');
 
     const filteredProducts = all_products.filter((product) => product.category === props.params.slug)
 

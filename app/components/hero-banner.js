@@ -1,7 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 // Example promo images – replace these with actual image paths or URLs
 import promo1 from '../lib/images/main-promo-imgs/Deal of the Day.webp';

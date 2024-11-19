@@ -58,7 +58,6 @@
 // export default Header;
 
 
-import React, { useState } from 'react';
 import { FiShoppingCart, FiUser, FiHeart, FiSun, FiMoon } from 'react-icons/fi';
 
 const Header = ({ onMenuClick, onToggleDarkMode, isDarkMode }) => {

@@ -98,7 +98,6 @@ import { IoCameraSharp } from "react-icons/io5";
 import { BsSmartwatch } from "react-icons/bs";
 import { LiaHomeSolid } from "react-icons/lia";
 import { CgSmartHomeRefrigerator } from "react-icons/cg";
-import { CiSpeaker } from "react-icons/ci";
 
 
 const SideBar = ({ onClose, isSidebarVisible }) => {
