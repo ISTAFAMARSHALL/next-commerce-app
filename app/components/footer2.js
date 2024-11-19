@@ -39,7 +39,7 @@ const Footer = () => {
           <nav>
             <ul style={styles.list}>
               <li><a href="" style={styles.link}>About Us</a></li>
-              <li><a href="#shop-by-category" style={styles.link}>Shop by Category</a></li>
+              <li><a href="../#shop-by-category" style={styles.link}>Shop by Category</a></li>
               <li><a href="/promos/sale" style={styles.link}>Deals</a></li>
               <li><a href="" style={styles.link}>FAQ</a></li>
             </ul>
